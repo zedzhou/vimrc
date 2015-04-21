@@ -2,18 +2,8 @@ syntax enable
 syntax on
 set number
 set cursorline
-
-if has('gui_running')
-	"let g:winManagerWindowLayout='FileExplorer|TagList'
-	
-	set background=dark
-	colorscheme solarized
-	set guifont=Inconsolata\ for\ Powerline:h16
-	"set guifont=Droid\ Sans\ Mono\ for\ Powerline:h15
-else
-	colorscheme Tomorrow-Night-Eighties
-	"colorscheme dracula
-endif
+set t_Co=256
+colorscheme Tomorrow-Night
 
 "Add 80 column line
 let &colorcolumn="81,".join(range(120,999),",")
@@ -43,7 +33,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'hynek/vim-python-pep8-indent'
 "Plugin 'kchmck/vim-coffee-script'
-" Track the engine.
+"Track the engine.
 Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
